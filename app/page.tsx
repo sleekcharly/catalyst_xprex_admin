@@ -1,5 +1,7 @@
+import DataTable from '@/components/data-table';
 import InteractiveChart from '@/components/interactive-chart';
 import SectionCards from '@/components/section-cards';
+import data from '@/constants/data.json';
 
 export default function Home() {
   return (
@@ -9,6 +11,7 @@ export default function Home() {
         <div className="px-4 lg:px-6">
           <InteractiveChart />
         </div>
+        <DataTable data={data} />
       </div>
     </div>
   );
